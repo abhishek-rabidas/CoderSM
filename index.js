@@ -3,11 +3,9 @@ const port = 8000;
 
 const app = express(); //Acquiring the express methods
 
-//Returning response to the GET request from the browser
-app.get("/", function(req, res) {
+app.use("/", require('./routes')); //Using the express router
 
-    return res.send("HEY");
-});
+
 
 
 //App is listening at the port
