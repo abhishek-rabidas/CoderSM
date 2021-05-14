@@ -4,6 +4,7 @@ const router = express.Router();
 const postCtrl = require('../controllers/posts_constroller');
 const { route } = require('./users');
 
+//Serving different GET requests
 router.get('/create', postCtrl.createPost);
 router.get('/delete', postCtrl.deletePost);
 
